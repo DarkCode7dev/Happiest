@@ -1,4 +1,3 @@
-F:\7day challenge\WebApI\WebApI\obj\Debug\netcoreapp3.1\WebApI.csprojAssemblyReference.cache
 F:\7day challenge\WebApI\WebApI\obj\Debug\netcoreapp3.1\WebApI.AssemblyInfoInputs.cache
 F:\7day challenge\WebApI\WebApI\obj\Debug\netcoreapp3.1\WebApI.AssemblyInfo.cs
 F:\7day challenge\WebApI\WebApI\obj\Debug\netcoreapp3.1\WebApI.csproj.CoreCompileInputs.cache

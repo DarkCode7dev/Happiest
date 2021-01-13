@@ -12,7 +12,7 @@ namespace WebApI.Models
         public int GMId { get; set; }
         public string CardOwnerName { get; set; }
         public string CardNumber { get; set; }
-        public string ExpirationDate { get; set; }
+       // public string ExpirationDate { get; set; }
 
         public int Money { get; set; }
     }

@@ -2,7 +2,7 @@
 
 namespace WebApI.Migrations
 {
-    public partial class Initial : Migration
+    public partial class Dev : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,6 @@ namespace WebApI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CardOwnerName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CardNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ExpirationDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Money = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

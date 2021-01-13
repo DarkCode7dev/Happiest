@@ -9,8 +9,8 @@ using WebApI.Models;
 namespace WebApI.Migrations
 {
     [DbContext(typeof(DetailContext))]
-    [Migration("20210102174515_Initial")]
-    partial class Initial
+    [Migration("20210113123425_Dev")]
+    partial class Dev
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,9 +31,6 @@ namespace WebApI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CardOwnerName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ExpirationDate")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Money")

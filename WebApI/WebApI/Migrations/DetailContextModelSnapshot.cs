@@ -31,9 +31,6 @@ namespace WebApI.Migrations
                     b.Property<string>("CardOwnerName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ExpirationDate")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("Money")
                         .HasColumnType("int");
 

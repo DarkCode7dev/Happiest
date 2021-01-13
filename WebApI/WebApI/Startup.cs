@@ -28,9 +28,10 @@ namespace WebApI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().AddNewtonsoftJson(opt =>
+            services.AddMvc().AddJsonOptions(o =>
             {
-                opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                o.JsonSerializerOptions.PropertyNamingPolicy = null;
+                o.JsonSerializerOptions.DictionaryKeyPolicy = null;
             });
             services.AddDbContext<DetailContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
             services.AddControllers();

@@ -63,7 +63,7 @@ namespace WebApI.Data
             }
             member.CardNumber = Detail.CardNumber;
             member.CardOwnerName = Detail.CardOwnerName;
-            member.ExpirationDate = Detail.ExpirationDate;
+          //  member.ExpirationDate = Detail.ExpirationDate;
             member.Money = Detail.Money;
             await _context.SaveChangesAsync();
             return true;

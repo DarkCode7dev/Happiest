@@ -9,7 +9,7 @@ using WebApI.Models;
 
 namespace WebApI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[Action]")]
     [ApiController]
     public class DetailController : ControllerBase
     {
@@ -65,7 +65,7 @@ namespace WebApI.Controllers
 
         // POST: api/Detail
         [HttpPost]
-        public async Task<ActionResult<Members>> PostDetail(Members Detail)
+        public async Task<ActionResult<Members>> SaveDetail([FromBody]Members Detail)
         {
            var value= await _repo.PostDetail(Detail);
             if (value==0)
