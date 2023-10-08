@@ -1,5 +1,5 @@
 using NToastNotify;
-
+//https://blog.christian-schou.dk/toast-notifications-in-an-asp-net-core-web-app/
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
